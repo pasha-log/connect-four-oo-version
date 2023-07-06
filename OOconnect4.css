@@ -1,26 +1,52 @@
 /* game board table */
 
 #board td {
-    width: 50px;
-    height: 50px;
-    border: solid 1px #666;
-  }
-  
-  /* pieces are div within game table cells: draw as colored circles */
-  
-  .piece {
-    margin: 5px;
-    width: 80%;
-    height: 80%;
-    border-radius: 50%;
-  }
-  
-  /* column-top is table row of clickable areas for each column */
-  
-  #column-top td {
-    border: dashed 1px lightgray;
-  }
-  
-  #column-top td:hover {
-    background-color: gold;
-  }
+	width: 50px;
+	height: 50px;
+	border: solid 2px yellow;
+	border-radius: 50%;
+	background-color: white;
+}
+
+#game {
+	border: solid 1px blue;
+	border-radius: 1rem;
+	background-color: blue;
+}
+
+/* pieces are div within game table cells: draw as colored circles */
+
+.piece {
+	margin: 5px;
+	width: 80%;
+	height: 80%;
+	border-radius: 50%;
+}
+
+/* column-top is table row of clickable areas for each column */
+
+#column-top td {
+	border: dashed 2px red;
+}
+
+#column-top td:hover {
+	background-color: gold;
+}
+
+body,
+.title-div {
+	justify-content: center;
+	align-items: center;
+	display: grid;
+	background-image: url("https://static.vecteezy.com/system/resources/previews/019/927/521/original/wood-texture-background-free-photo.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.title {
+	width: 18rem;
+}
+/* 
+.title-div {
+	border: solid 1px green;
+} */
